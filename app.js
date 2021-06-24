@@ -2,6 +2,7 @@
 import { add } from './calculations.js';
 import { sub } from './calculations.js';
 import { mult } from './calculations.js';
+import { div } from './calculations.js';
 
 
 // reference needed DOM elements
@@ -53,9 +54,12 @@ multButton.addEventListener('click', ()=>{
     const multAnswer = mult(mult1, mult2);
     multAnswerSpan.textContent = multAnswer;
 });
-
+  
 divButton.addEventListener('click', ()=> {
-    console.log('you clicked the divide button!');
+    const div1 = Number(divInput1.value);
+    const div2 = Number(divInput2.value);
+    const divAnswer = div(div1, div2);
+    divAnswerSpan.textContent = divAnswer;
 });
   // get user input(s)
   // do any needed work with the value(s)
