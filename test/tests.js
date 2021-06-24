@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { sub } from '../calculations.js';
+import { mult } from '../calculations.js';
 
 
 const test = QUnit.test;
@@ -8,11 +8,11 @@ const test = QUnit.test;
 test('time to test a function', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = 5;
+    const expected = 6;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = sub(7, 2); // use your function here
+    const actual = mult(3, 2); // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
