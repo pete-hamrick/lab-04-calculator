@@ -1,6 +1,7 @@
 // import functions
 import { add } from './calculations.js';
 import { sub } from './calculations.js';
+import { mult } from './calculations.js';
 
 
 // reference needed DOM elements
@@ -41,9 +42,12 @@ subButton.addEventListener('click', () => {
     const subAnswer = sub(sub1, sub2);
     subAnswerSpan.textContent = subAnswer;
 });
-
+  
 multButton.addEventListener('click', ()=>{
-    console.log('you clicked the multiply button!');
+    const mult1 = Number(multInput1.value);
+    const mult2 = Number(multInput2.value);
+    const multAnswer = mult(mult1, mult2);
+    multAnswerSpan.textContent = multAnswer;
 });
   // get user input(s)
   // do any needed work with the value(s)
