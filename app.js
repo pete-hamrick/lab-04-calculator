@@ -1,5 +1,7 @@
 // import functions
 import { add } from './calculations.js';
+import { sub } from './calculations.js';
+
 
 // reference needed DOM elements
 //Add
@@ -27,9 +29,12 @@ addButton.addEventListener('click', ()=> {
     const addAnswer = add(add1, add2);
     addAnswerSpan.textContent = addAnswer;
 });
-
+  
 subButton.addEventListener('click', () => {
-    
+    const sub1 = Number(subInput1.value);
+    const sub2 = Number(subInput2.value);
+    const subAnswer = sub(sub1, sub2);
+    subAnswerSpan.textContent = subAnswer;
 });
   // get user input(s)
   // do any needed work with the value(s)
