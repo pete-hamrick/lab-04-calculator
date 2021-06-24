@@ -26,6 +26,10 @@ const multButton = document.getElementById('mult-button');
 
 
 //Division
+const divInput1 = document.getElementById('div-num1');
+const divInput2 = document.getElementById('div-num2');
+const divAnswerSpan = document.getElementById('div-answer');
+const divButton = document.getElementById('div-button');
 
 
 // set event listeners 
@@ -48,6 +52,10 @@ multButton.addEventListener('click', ()=>{
     const mult2 = Number(multInput2.value);
     const multAnswer = mult(mult1, mult2);
     multAnswerSpan.textContent = multAnswer;
+});
+
+divButton.addEventListener('click', ()=> {
+    console.log('you clicked the divide button!');
 });
   // get user input(s)
   // do any needed work with the value(s)
