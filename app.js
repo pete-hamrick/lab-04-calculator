@@ -18,6 +18,11 @@ const subButton = document.getElementById('sub-button');
 
 
 //Multiplication
+const multInput1 = document.getElementById('mult-num1');
+const multInput2 = document.getElementById('mult-num2');
+const multAnswerSpan = document.getElementById('mult-answer');
+const multButton = document.getElementById('mult-button');
+
 
 //Division
 
@@ -35,6 +40,10 @@ subButton.addEventListener('click', () => {
     const sub2 = Number(subInput2.value);
     const subAnswer = sub(sub1, sub2);
     subAnswerSpan.textContent = subAnswer;
+});
+
+multButton.addEventListener('click', ()=>{
+    console.log('you clicked the multiply button!');
 });
   // get user input(s)
   // do any needed work with the value(s)
